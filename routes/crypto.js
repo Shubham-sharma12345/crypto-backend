@@ -23,6 +23,6 @@ router.get('/historical/:id', async (req, res) => {
   }
 });
 router.get('/',(req,res)=>{
-   res.send(200).json({ message:'hello'});
+   res.send("200").json({ message:'hello'});
 })
 module.exports = router;
