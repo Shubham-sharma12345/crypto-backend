@@ -22,5 +22,7 @@ router.get('/historical/:id', async (req, res) => {
     res.status(500).json({ error: 'Error fetching historical data' });
   }
 });
-
+router.get('/',(req,res)=>{
+   res.send(200).json({ message:'hello'});
+})
 module.exports = router;
