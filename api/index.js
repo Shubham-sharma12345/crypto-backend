@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const cron = require('node-cron');
-const connectDB = require('./config/db');
-const cryptoRoutes = require('./routes/crypto');
-const fetchCryptoData = require('./services/fetchCryptoData');
+const connectDB = require('../config/db');
+const cryptoRoutes = require('../routes/crypto');
+const fetchCryptoData = require('../services/fetchCryptoData');
 require('dotenv').config();
 
 const app = express();
